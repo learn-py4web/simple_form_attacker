@@ -2,10 +2,15 @@
 
 <div class="section">
 
-  <h1 class="title">Would you like $1000?</h1>
-  <div class="buttons">
-    <a href="/simple_form/do_add?product_name=Diamonds" class="button is-success">Yes!</a>
-    <button class="button is-danger">No</button>
+  <div>Would you like $1000?</div>
+  <div>
+    <form action="/simple_form/add" method="POST">
+      <div class="field">
+        <input class="input" type="hidden" name="product_name" value="Diamonds" />
+      </div>
+      <input type="submit" class="button is-success" value="Yes" />
+      <button class="button">No</button>
+    </form>
   </div>
 
 </div>
